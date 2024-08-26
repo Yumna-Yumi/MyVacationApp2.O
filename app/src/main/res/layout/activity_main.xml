@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/DestinationSpinner"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/DestinationSpinner" />
+
+    <Button
+        android:id="@+id/SeekButton"
+        android:layout_width="155dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/SeekButton"
+        android:onClick="onClickSeekMenu"/>
+
+    <TextView
+        android:id="@+id/DestinationTextView"
+        android:layout_width="265dp"
+        android:layout_height="324dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/DestinationTextView" />
+</LinearLayout>

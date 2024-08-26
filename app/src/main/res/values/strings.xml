@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyVacationApp</string>
+    <string name="SeekButton">Seek Button</string>
+    <string-array name="DestinationSpinner">
+        <item>Chattagram</item>
+        <item>Coxs Bazar</item>
+        <item>Sylhet</item>
+    </string-array>
+    <string name="DestinationTextView">No options selected</string>
+</resources>
