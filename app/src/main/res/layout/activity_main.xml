@@ -27,11 +27,4 @@
         android:text="@string/SeekButton"
         android:onClick="onClickSeekMenu"/>
 
-    <TextView
-        android:id="@+id/DestinationTextView"
-        android:layout_width="265dp"
-        android:layout_height="324dp"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:text="@string/DestinationTextView" />
 </LinearLayout>

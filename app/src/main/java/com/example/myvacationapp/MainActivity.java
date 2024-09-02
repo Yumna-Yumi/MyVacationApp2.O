@@ -1,5 +1,6 @@
 package com.example.myvacationapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -19,7 +20,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-        private DestinationExpert expert = new DestinationExpert();
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -29,15 +29,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClickSeekMenu(View view) {
             Spinner DestinationSpinner = (Spinner) findViewById(R.id.DestinationSpinner);
             String SelectedSpot = String.valueOf(DestinationSpinner.getSelectedItem());
+            Intent intent = new Intent(this,SecondActivity.class);
+            intent.putExtra(SecondActivity.Spot, SelectedSpot);
+            startActivity(intent);
 
-            List<String> spotList = expert.getSpot(SelectedSpot);
-            StringBuilder spotFormatted = new StringBuilder();
-            for (String Spot : spotList) {
-                spotFormatted.append(Spot).append('\n');
-            }
-
-            TextView DestinationTextView = (TextView) findViewById(R.id.DestinationTextView);
-            DestinationTextView.setText(spotFormatted);
 
         }
 
